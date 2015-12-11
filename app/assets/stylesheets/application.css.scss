@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+//nav bar
+ body{
+   margin:0;
+   padding:0;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .homebackground{
+  // background-image: url("http://www.resimsi.com/wp-content/uploads/2015/06/high-tech-background.jpg")no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  background-image: url("http://superfitlifestyle.com/wp-content/uploads/2013/09/Blue-Desktop-Background-1280x720.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 100%;
+display: flex;
+ }
+
+
+ h1 {
+   font-family: 'Patua One', cursive;
+ }
+
+ header {
+   background:#27363f;
+   width:100%;
+   padding:40px 0;
+   color:white;
+   text-align:center;
+ }
+
+ a {
+   text-decoration:none;
+   color:inherit;
+ }
+
+ nav ul {
+   background-color:#446274;
+   overflow:hidden;
+   color:white;
+   padding:0;
+   margin:0;
+   text-align:center;
+   -webkit-transition:max-height 0.4s;
+   -ms-transition:max-height 0.4s;
+   -moz-transition:max-height 0.4s;
+   -o-transition:max-height 0.4s;
+   transition:max-height 0.4s;
+ }
+
+ nav ul li {
+   display:inline-block;
+   padding:20px;
+ }
+
+ nav ul li:hover {
+   background-color:#718e9e;
+ }
+
+ section {
+   line-height: 1.5em;
+   font-size:0.9em;
+   padding:40px;
+   width:75%;
+   margin:0 auto;
+ }
+
+   .handle {
+     width:100%;
+     background: #446274;
+     text-align:left;
+     box-sizing:border-box;
+     padding:15px 10px;
+     cursor:pointer;
+     color:white;
+     display:none;
+   }
+
+ @media screen and (max-width:580px){
+
+   nav ul {
+     max-height:0;
+   }
+
+   .showing {
+     max-height:20em;
+   }
+   nav ul li {
+     width:100%;
+     box-sizing:border-box;
+     padding:15px;
+     text-align:left;
+   }
+
+   .handle {
+     display:block;
+   }
+
+
+ }
+
+//team page css
+$wrapper_width:800px;
+
+h1{
+  text-align: left;
+  font-size: 18px;
+  padding:5px 0;
+  border-bottom:1.5px solid;
+  border-color: #1B63E0;
+}
+
+#big_wrapper{
+  display:block;
+  max-width:$wrapper_width;
+  margin:0 auto;
+  background:#FFF;
+  border:1px solid rgba(0,0,0,0.5);
+  border-top:none;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 0px 0px 8px 8px;
+}
+#content_wrapper{
+  display:box;
+  box-flex:1;
+  max-width:$wrapper_width;
+  box-sizing:border-box;
+  padding:10px;
+
+}
+#content_wrapper > *{
+  margin-right:10px;
+
+}
+
+#content{
+  box-flex:1;
+}
+
+.row {
+   display: block;
+ }
+ .teamcontainer {
+   display: inline-block;
+ }
+ .left {
+   float: left;
+ }
+ .right {
+   float: right;
+ }
+
+ .copperplate{
+ 	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+ 	font-size: 200%;
+ 	font-style: normal;
+ 	font-variant: normal;
+ 	font-weight: 500;
+  }
